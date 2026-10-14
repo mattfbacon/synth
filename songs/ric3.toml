@@ -1,0 +1,26 @@
+name = "Ricercar a 3"
+samples_per_tick = 150
+
+[[track]]
+wave = "none"
+
+[[track]]
+wave = "none"
+
+[[track]]
+wave = "tri"
+pan = 0.5
+volume = 0.22
+
+[[track]]
+wave = "square"
+pan = 0.25
+volume = 0.07
+
+[[track]]
+wave = "saw"
+pan = 0.75
+volume = 0.08
+
+[[track]]
+wave = "none"

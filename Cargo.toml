@@ -1,0 +1,16 @@
+[package]
+edition = "2024"
+license = "AGPL-3.0-or-later"
+name = "synth"
+version = "0.1.0"
+
+[dependencies]
+argh = "0.1"
+cpal = "0.18"
+hound = "3"
+midly = "0.5"
+serde = { version = "1", features = ["derive"] }
+temp-dir = "0.2"
+text2art = "1"
+toml = "1"
+yansi = "1"

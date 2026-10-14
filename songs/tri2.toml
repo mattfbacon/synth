@@ -1,0 +1,29 @@
+name = "Kontrapunctus 11"
+samples_per_tick = 300
+
+[[track]]
+wave = "none"
+
+# 2
+[[track]]
+wave = "saw"
+pan = 0.8
+volume = 0.08
+
+# 1
+[[track]]
+wave = "tri"
+pan = 0.4
+volume = 0.15
+
+# 4
+[[track]]
+wave = "sine"
+pan = 0.5
+volume = 0.25
+
+# 3
+[[track]]
+wave = "square"
+pan = 0.6
+volume = 0.06
