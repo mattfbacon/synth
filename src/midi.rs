@@ -175,10 +175,6 @@ impl MidiPlayer<'_> {
 	}
 
 	fn print_active(&mut self) {
-		if !self.print {
-			return;
-		}
-
 		for active_voice in self.active_set() {
 			let colors = [
 				Color::White,
@@ -227,7 +223,7 @@ impl Iterator for MidiPlayer<'_> {
 			self.t_ticks += 1;
 		}
 
-		if self.t_frac == 0 && self.t_ticks.is_multiple_of(20) {
+		if self.print && self.t_frac == 0 && self.t_ticks.is_multiple_of(20) {
 			self.print_active();
 		}
 
