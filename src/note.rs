@@ -93,8 +93,8 @@ impl Note {
 		self.end_in = Some(u8::try_from(end_in).unwrap().try_into().unwrap());
 	}
 
-	pub fn reset(&mut self, vel: NonZeroU8) {
-		*self = Self::new(self.key, vel);
+	pub fn set_vel(&mut self, vel: NonZeroU8) {
+		self.vel = vel;
 	}
 
 	pub fn key(&self) -> Key {

@@ -139,7 +139,7 @@ impl<'a> MidiPlayer<'a> {
 				let existing = notes.iter_mut().find(|note| note.key() == ev.key);
 				match (ev.kind, existing) {
 					(EventKind::NoteOn { vel }, Some(existing)) => {
-						existing.reset(vel);
+						existing.set_vel(vel);
 					}
 					(EventKind::NoteOn { vel }, None) => {
 						notes.push(Note::new(ev.key, vel));
